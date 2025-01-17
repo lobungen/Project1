@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*landing page style*/
+
+
+/*holding the box with image and text in it*/
+
+        body {
+            background-image: url(futureDiaryBG.jpg);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+/*holding everything*/
+        .container {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            background: #41267d;
+            box-shadow: 0 4px 10px hwb(305 2% 8% / 0.879);
+            border-radius: 80px;
+            overflow: hidden;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+/* this is the page title*/
+        .text-box h1 {
+            margin-bottom: 20px;
+            color: hsl(0, 83%, 53%);
+        }
+/*box holding picture*/
+        .photo-box {
+            flex: 1;
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: fill;
+            clip-path: xywh(60px 15px 100% 85% round 95% 60px); 
+        }
+/*actual image*/
+        .photo-box img {
+            width: 90%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+   
