@@ -7,8 +7,6 @@
 </head>
         
 <body>
-The content of the document......
-
 <h2>Log In</h2>
 <form method="Post">
     <div class="user-info">
@@ -16,14 +14,18 @@ The content of the document......
         <input type="text" name="username" id="username" required>
         <label for="password">Password:</label>
         <input type="password" name="password" id="password">
-    </div>
-    <div id="login">
-        <button id="login" type="login">Log In</button>
+
     </div>
 </form>
 
-<a href="forgotpassword.php">Forgot Password</a>
-<br>Do not have an account? <a href="register.php">Register</a>
+<input type="checkbox" checked="checked" name="remember">Remember me
+<br>
+<a href="forgotpassword.html">Forgot Password</a>
+<br>Do not have an account? <a href="register.html">Register</a>
+<br>        
+<a href="landingpg.html">
+<button id="login" type="submit">Log In</button></a>
+
 
 <script src="./assets/js/login.js"></script>
 </body>
