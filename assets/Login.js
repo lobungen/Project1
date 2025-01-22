@@ -1,19 +1,21 @@
-const email = document.querySelector('email');
-const password = document.querySelector('password');
-const login = document.querySelector('login');
+const usernameInput = document.querySelector('#username');
+const passwordInput = document.querySelector('#password');
 
-const email = 'email';
-const password = 'password';
+renderLastRegistered();
 
 function renderLastRegisteredUser() {
-    const email = localStorage.getItem('email');
+    const username = localStorage.getItem('username');
     const password = localStorage.getItem('password');
 
 login.addEventListener('click', () => {
     event.preventDefault();
 
-localStorage.setItem('email', email);
+localStorage.setItem('username', username);
 localStorage.setItem('password', password);
-renderLastRegisteredUser();
 
-<button onclick="window.location.href='landingpg.html'">Click Me!</button>
+
+if (username === '') {
+    displayMessage('error', 'Username cannot be blank');
+} else if (password === '') {
+    displayMessage('error', 'Password cannot be blank');
+
