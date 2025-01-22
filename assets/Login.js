@@ -15,3 +15,5 @@ login.addEventListener('click', () => {
 localStorage.setItem('email', email);
 localStorage.setItem('password', password);
 renderLastRegisteredUser();
+
+<button onclick="window.location.href='landingpg.html'">Click Me!</button>
