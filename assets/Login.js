@@ -13,7 +13,9 @@ login.addEventListener('click', () => {
 localStorage.setItem('username', username);
 localStorage.setItem('password', password);
 
+
 if (username === '') {
     displayMessage('error', 'Username cannot be blank');
 } else if (password === '') {
     displayMessage('error', 'Password cannot be blank');
+
