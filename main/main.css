@@ -1,44 +1,85 @@
 
+.article {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 200px;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 20px;
-    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-}
-
-
-.grid-container {
-    display: grid;
-     grid-template-columns: minmax(20px, 1fr) repeat(6, minmax(0, 60px)) minmax(20px, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 10px;
-}
-
-.grid-item {
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    min-height: 100vh;
     background-repeat: no-repeat;
-    border-radius: 10px;
-    overflow: hidden;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 50px;
-    border: 2px solid #73AD21;
-    padding: 60px;
-    width: 200px;
-    height: 50px;
-
+  background-size: cover;
+  flex-direction: column;
+    background-image: url('pinkmoon.jpg')
     
 }
+/* Grid container */
+.grid-container {
+    display: grid;
+   grid-auto-rows: 150px;
+   align-items: start;
+   grid-template-columns: wrap;
+   grid-template-columns: repeat(3, 1fr); 
+   grid-auto-rows: 150px;
+    gap: 15px; 
+    width: auto; 
+    margin: 50px;
+    flex-direction: row; 
+}
+/*.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+   grid-auto-rows: 150px;
+    gap: 15px; 
+    width: auto; 
+    margin: 50px;
+    flex-direction: row;
 
-/* Colored items until backgrounds are set */
+}
+/* Grid items */
+.grid-item {
+    height: 80px;
+  width: 200px;
+  padding: 30px;
+  margin: 40px;
+  border: 5px solid black;
+  float: left;
+  border-radius: 35px;
+}
+
+.stars {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ccc;
+}
+
+.stars .star {
+  cursor: pointer;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.stars .star:hover,
+.stars .star:hover ~ .star {
+  color: gold;
+}
+
+.stars .star.rated {
+  color: gold;
+}
+/* Placeholder colors */
 .item-1 { background-color: aqua; }
 .item-2 { background-color: black; }
 .item-3 { background-color: #e70000; }
