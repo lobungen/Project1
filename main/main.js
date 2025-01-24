@@ -23,17 +23,5 @@ function remove() {
     }
 }
 
-function filterContent() {
-
-var user = document.getElementById("dropDown").value;
-var item1 = document.getElementById("item1");
-var item2 = document.getElementById("item2");
-var item3 = document.getElementById("item3");
-var item4 = document.getElementById("item4");
-
-if 
-
-}
-
 
 /* 6 boxes. 4 with stars for shows, number 5 for podcast? number 6 for news? local links?   https://www.iheart.com/  for podcast? */
