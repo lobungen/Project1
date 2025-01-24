@@ -1,14 +1,12 @@
 
-.article {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 10px;
-  text-decoration: none;
-  font-size: 17px;
+.nav {
+  position: absolute;
+  left: 50%;
   width: 200px;
+  line-height: normal;
+  text-align: center;
+  margin-top: 1px;
 }
-
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -26,37 +24,29 @@ body {
 }
 /* Grid container */
 .grid-container {
-    display: grid;
-   grid-auto-rows: 150px;
-   align-items: start;
-   grid-template-columns: wrap;
-   grid-template-columns: repeat(3, 1fr); 
-   grid-auto-rows: 150px;
-    gap: 15px; 
-    width: auto; 
-    margin: 50px;
-    flex-direction: row; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: 250px;
+  gap: 20px; 
+  width: 250px; 
+  margin: 10px;
+  flex-direction: row;
+  padding-top: 120px;
 }
-/*.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-   grid-auto-rows: 150px;
-    gap: 15px; 
-    width: auto; 
-    margin: 50px;
-    flex-direction: row;
 
-}
-/* Grid items */
 .grid-item {
-    height: 80px;
+  height: 150px;
   width: 200px;
-  padding: 30px;
-  margin: 40px;
+  padding: 20px;
+  margin: 0;
   border: 5px solid black;
-  float: left;
   border-radius: 35px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 
 .stars {
   margin-top: 10px;
@@ -73,16 +63,16 @@ body {
 
 .stars .star:hover,
 .stars .star:hover ~ .star {
-  color: gold;
+  color: #000000;
 }
 
 .stars .star.rated {
-  color: gold;
+  color: #000000;
 }
 /* Placeholder colors */
-.item-1 { background-color: aqua; }
-.item-2 { background-color: black; }
-.item-3 { background-color: #e70000; }
-.item-4 { background-color: #3000ef; }
-.item-5 { background-color: #64d721; }
-.item-6 { background-color: #9d001f; }
+.item-1 { background-image: url(house.jpg);}
+.item-2 { background-image: url(dock.jpg);}
+.item-3 { background-image: url(redsmoke.jpg);}
+.item-4 { background-image: url(purplesmoke.jpg); }
+.item-5 { background-image: url(podcast.jpg); }
+.item-6 { background-image: url(news.jpg); }
