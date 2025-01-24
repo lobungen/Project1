@@ -4,15 +4,28 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 <title>Rotten Potatoes Main</title>
 </head>
-<nav>
-  <article>
-    <input type="text" placeholder=">«-(¯`v´¯)-« Search »-(¯`v´¯)-»">
-  </article>
-</nav>
+
+  <nav>
+    <article>
+      <input type="text" placeholder="       >«-(¯`v´¯)-« Search »-(¯`v´¯)-»" size="30">
+      <select id="dropDown" onchange="filterContent();">
+
+        <option value="item1"></option>
+        <option value="item2"></option>
+        <option value="item3"></option>
+        <option value="item4"></option>
+      </select>
+    </article>
+  </nav>
+
+
+
+
 <body>
   <main class="grid-container">
 
-         <div class="grid-item item-1">Item 1</div>
+         <div class="grid-item item-1">
+          item 1
           
             <div class="stars">
               <span class="star" onclick="rateItem(1, 1)">★</span>
@@ -21,8 +34,10 @@
               <span class="star" onclick="rateItem(1, 4)">★</span>
               <span class="star" onclick="rateItem(1, 5)">★</span>
           </div>
+        </div>
 
-            <div class="grid-item item-2">Item 2</div>
+            <div class="grid-item item-2">
+              Item 2
             
             <div class="stars">
               <span class="star" onclick="rateItem(1, 1)">★</span>
@@ -31,16 +46,10 @@
               <span class="star" onclick="rateItem(1, 4)">★</span>
               <span class="star" onclick="rateItem(1, 5)">★</span>
           </div>
-            <div class="grid-item item-3">Item 3</div>
-            <div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
+        </div>
 
-            <div class="grid-item item-4">Item 4</div>
+            <div class="grid-item item-3">
+              Item 3
             <div class="stars">
               <span class="star" onclick="rateItem(1, 1)">★</span>
               <span class="star" onclick="rateItem(1, 2)">★</span>
@@ -48,7 +57,10 @@
               <span class="star" onclick="rateItem(1, 4)">★</span>
               <span class="star" onclick="rateItem(1, 5)">★</span>
           </div>
-            <div class="grid-item item-5">Item 5</div>
+        </div>
+
+            <div class="grid-item item-4">
+              Item 4
             <div class="stars">
               <span class="star" onclick="rateItem(1, 1)">★</span>
               <span class="star" onclick="rateItem(1, 2)">★</span>
@@ -56,16 +68,13 @@
               <span class="star" onclick="rateItem(1, 4)">★</span>
               <span class="star" onclick="rateItem(1, 5)">★</span>
           </div>
+        </div>
+
+            <div class="grid-item item-5">News</div>
+              
+
            
-            <div class="grid-item item-6">Item 6</div>
-<div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
-
+            <div class="grid-item item-6">Podcast</div>
     </main>     
 <script src="main.js"></script>
 </body>
