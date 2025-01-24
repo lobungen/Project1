@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <head>
-<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>Rotten Potatoes</title>
 </head>
-        
+<script defer src="Login.js"></script>
 <body>
 The content of the document......
 
 <h2>Log In</h2>
-<form method="Post">
+<form method="post">
     <div class="user-info">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" required>
+
         <label for="password">Password:</label>
         <input type="password" name="password" id="password">
     </div>
     <div id="login">
-        <button id="login" type="login">Log In</button>
+        <button type="submit">Log In</button>
     </div>
 </form>
 
 <a href="forgotpassword.php">Forgot Password</a>
 <br>Do not have an account? <a href="register.php">Register</a>
 
-<script src="./assets/js/login.js"></script>
 </body>
         
 </html>

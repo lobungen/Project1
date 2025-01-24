@@ -19,7 +19,10 @@ body {
     background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-    background-image: url('pinkmoon.jpg')
+    background-image: url('pinkmoon.jpg');
+    font-size: 18px; 
+    font-weight: bold;
+    -webkit-text-stroke: 1px #ff0cf7;
     
 }
 /* Grid container */
@@ -39,7 +42,7 @@ body {
   width: 200px;
   padding: 20px;
   margin: 0;
-  border: 5px solid black;
+  border: 5px solid #ff0cf7;
   border-radius: 35px;
   background-size: cover;
   display: flex;
@@ -70,9 +73,10 @@ body {
   color: #000000;
 }
 /* Placeholder colors */
-.item-1 { background-image: url(house.jpg);}
-.item-2 { background-image: url(dock.jpg);}
-.item-3 { background-image: url(redsmoke.jpg);}
-.item-4 { background-image: url(purplesmoke.jpg); }
-.item-5 { background-image: url(podcast.jpg); }
-.item-6 { background-image: url(news.jpg); }
+.item1 { background-image: url(house.jpg);}
+.item2 { background-image: url(dock.jpg);}
+.item3 { background-image: url(redsmoke.jpg);}
+.item4 { background-image: url(purplesmoke.jpg);}
+.item5 { background-image: url(pinkanimegirl.png);}
+.item6 { background-image: url(news.jpg);}
+
