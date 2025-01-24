@@ -52,25 +52,31 @@ function renderLastRegisteredUser() {
 
 
 
+const postEl = document.querySelector('post');
 
+function storeLocalStorage(data) {
+    const existingData = readLocalStorage();
+    existingData.push(data){
+        localStorage.setItem('post', JSON.stringify(existingData));
+    }};
 
+document.getElementById('post').addEventListener('login',function (event){
+    event.preventDefault();
+    });
 
-/*
-const email = document.querySelector('email');
-const password = document.querySelector('password');
-const login = document.querySelector('login');
+const username = document.getElementById('username').value;
+const password = document.getElementById('password').value;
 
-const email = 'email';
-const password = 'password';
+renderLastRegistered();
 
 function renderLastRegisteredUser() {
-    const email = localStorage.getItem('email');
+    const username = localStorage.getItem('username');
     const password = localStorage.getItem('password');
+};
 
-login.addEventListener('click', () => {
-    event.preventDefault();
 
-localStorage.setItem('email', email);
-localStorage.setItem('password', password);
-renderLastRegisteredUser();
-*/
+if (username === '') {
+    displayMessage('error', 'Username cannot be blank');
+} else if (password === '') {
+    displayMessage('error', 'Password cannot be blank');
+};
