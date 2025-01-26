@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>Rotten Potatoes</title>
-<link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-<h2>Log In</h2>
-<form method="post">
-    <div class="user-info">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Rotten Potatoes</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h2>Log In</h2>
+    <form method="post">
+      <div class="user-info">
         <label for="username">Username:</label>
-        <input type="text" name="username" id="username" required>
+        <input type="text" name="username" id="username" required />
 
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password">
-    </div>
-    <div id="login">
+        <input type="password" name="password" id="password" />
+      </div>
+      <div id="login">
         <button type="submit">Log In</button>
+      </div>
+    </form>
+    <div id="error">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p>Fill out all field</p>
+      </div>
     </div>
-</form>
+    </div>
 
-<input type="checkbox" checked="checked" name="remember">Remember me
-<br>
-<a href="forgotpassword.html">Forgot Password</a>
-<br>Do not have an account? <a href="register.html">Register</a>
-<br>        
-<a href="main.html">
-<button id="login" type="submit">Log In</button></a>
+    <input type="checkbox" checked="checked" name="remember" />Remember me
+    <br />
+    <a href="forgotpassword.html">Forgot Password</a>
+    <br />Do not have an account? <a href="register.html">Register</a>
+    <br />
 
-
-<script src="./assets/login.js"></script>
-</body>
-        
+    <script src="Login.js"></script>
+  </body>
 </html>

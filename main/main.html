@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="stylesheet" type="text/css" href="main.css">
-<title>Rotten Potatoes Main</title>
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Rotten Potatoes Main</title>
+  </head>
 
   <nav>
-    <article>
-      <input type="text" placeholder="       >«-(¯`v´¯)-« Search »-(¯`v´¯)-»" size="30">
-      <select id="dropDown" onchange="filterContent();">
-
-        <option value="item1"></option>
-        <option value="item2"></option>
-        <option value="item3"></option>
-        <option value="item4"></option>
-      </select>
+    <div class="nav-container">
+      <div class="search-bar"><input id="Search" type="search"/>
+      <datalist id="sailor moon">
+        <option value="ranma 1/2">
+          <option value="death note">
+            <option value="future diary">  
+          </datalist>
+      </div>
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">(¯`v Filter v´¯)-»</button>
+        <div id="dropdownMenu" class="dropdown-content">
+          <a href="#" onclick="filterContent('main\ranma.html')">Comedy</a>
+          <a href="#" onclick="filterContent('sailormoon.html')">Action</a>
+          <a href="#" onclick="filterContent('deathnote.html')">Thriller</a>
+          <a href="#" onclick="filterContent('futurepg.html')">Horror</a>
+        </div>
+      </div>
     </article>
   </nav>
 
+  <body>
+    <main class="grid-container">
+      <div class="grid-item item1" action>
+        Sailor Moon
 
-
-
-<body>
-  <main class="grid-container">
-
-         <div class="grid-item item1">
-          item 1
-          
-            <div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
+        <div class="stars" data-item="1">
+          <span class="star" onclick="rateItem(1, 1)">★</span>
+          <span class="star" onclick="rateItem(2, 1)">★</span>
+          <span class="star" onclick="rateItem(3, 1)">★</span>
+          <span class="star" onclick="rateItem(4, 1)">★</span>
+          <span class="star" onclick="rateItem(5, 1)">★</span>
         </div>
+      </div>
 
-            <div class="grid-item item2">
-              Item 2
-            
-            <div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
+      <div class="grid-item item2" horror>
+        Future Diary
+
+        <div class="stars" data-item="2">
+          <span class="star" onclick="rateItem(1, 2)">★</span>
+          <span class="star" onclick="rateItem(2, 2)">★</span>
+          <span class="star" onclick="rateItem(3, 2)">★</span>
+          <span class="star" onclick="rateItem(4, 2)">★</span>
+          <span class="star" onclick="rateItem(5, 2)">★</span>
         </div>
+      </div>
 
-            <div class="grid-item item3">
-              Item 3
-            <div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
+      <div class="grid-item item3"  thriller>
+        Death Note
+        <div class="stars" data-item="3">
+          <span class="star" onclick="rateItem(1, 3)">★</span>
+          <span class="star" onclick="rateItem(2, 3)">★</span>
+          <span class="star" onclick="rateItem(3, 3)">★</span>
+          <span class="star" onclick="rateItem(4, 3)">★</span>
+          <span class="star" onclick="rateItem(5, 3)">★</span>
         </div>
+      </div>
 
-            <div class="grid-item item4">
-              Item 4
-            <div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
+      <div class="grid-item item4" comedy>
+        Ranma 1/2
+        <div class="stars" data-item="4">
+          <span class="star" onclick="rateItem(1, 4)">★</span>
+          <span class="star" onclick="rateItem(2, 4)">★</span>
+          <span class="star" onclick="rateItem(3, 4)">★</span>
+          <span class="star" onclick="rateItem(4, 4)">★</span>
+          <span class="star" onclick="rateItem(5, 4)">★</span>
         </div>
+      </div>
 
-            <div class="grid-item item5">
-              Kat Ko.
-            <div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
+      <div class="grid-item item5">
+        Kat Ko.
+        <div class="stars" data-item="5">
+          <span class="star" onclick="rateItem(1, 5)">★</span>
+          <span class="star" onclick="rateItem(2, 5)">★</span>
+          <span class="star" onclick="rateItem(3, 5)">★</span>
+          <span class="star" onclick="rateItem(4, 5)">★</span>
+          <span class="star" onclick="rateItem(5, 5)">★</span>
         </div>
-           
-            <div class="grid-item item6">
-              Podcast
-            <div class="stars">
-              <span class="star" onclick="rateItem(1, 1)">★</span>
-              <span class="star" onclick="rateItem(1, 2)">★</span>
-              <span class="star" onclick="rateItem(1, 3)">★</span>
-              <span class="star" onclick="rateItem(1, 4)">★</span>
-              <span class="star" onclick="rateItem(1, 5)">★</span>
-          </div>
+      </div>
+
+      <div class="grid-item item6">
+       Somewhere at sea
+        <div class="stars" data-item="6">
+          <span class="star" onclick="rateItem(1, 6)">★</span>
+          <span class="star" onclick="rateItem(2, 6)">★</span>
+          <span class="star" onclick="rateItem(3, 6)">★</span>
+          <span class="star" onclick="rateItem(4, 6)">★</span>
+          <span class="star" onclick="rateItem(5, 6)">★</span>
         </div>
-    </main>     
-
-</body>
-
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
