@@ -1,27 +1,66 @@
-let stars = 
-document.getElementsByClassName("star");
-let output =
-document.getElementById("output");
+// it highlights, but it doesn't save?
+// needs to still hover
+// needs to save? or stay on the screen.. is that save?
+// eventListner?
+// needs the button click
+// dropdownn needs to work? events? targets?
+//jsfiddle.net super helpful!
+// make  it pretty? prettier doesn't work??
 
-function gfg(n) {
-    remove();
-    for (let i = 0; i < n; i++) {
-        if (n == 1) cls = "one";
-        else if (n == 2) cls = "two";
-        else if (n == 3) cls = "three";
-        else if (n == 4) cls = "four";
-        else if (n == 5) cls = "five";
-        stars[i].className = "star " + cls;
-    }
-    output.innerText = "Rating is: " + n + "/5";
+function toggleDropdown() {
+  const dropwdownMenu = document.getElementById("dropdownMenu");
+  dropwdownMenu.classList.toggle("active");
 }
-function remove() {
-    let i = 0;
-    while (i < 5) {
-        stars[i].className = "star";
-        i++;
+window.onclick = function (event) {
+  const dropdownMenu = document.getElementById("dropdownMenu");
+  if (!event.target.matches(".dropbtn")) {
+    dropdownMenu.classList.remove("active");
+  }
+};
+
+function filterContent(genre) {
+  console.log(`Filtering content by: ${genre}`);
+  const items = document.querySelectorAll(".grid-item");
+  items.forEach((item) => {
+    if (item.classList.contains(genre)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
     }
+  });
 }
 
-
-/* 6 boxes. 4 with stars for shows, number 5 for podcast? number 6 for news? local links?   https://www.iheart.com/  for podcast? */
+function rateItem(rating, itemId) {
+  const stars = document.querySelectorAll(
+    `.stars[data-item="${itemId}"] .star`
+  );
+  stars.forEach((star) => {
+    star.classList.remove("lit");
+  });
+  stars.forEach((star, index) => {
+    if (index < rating) {
+      star.classList.add("lit");
+    }
+  });
+  localStorage.setItem(`rating-${itemId}`, rating);
+}
+function loadRating(itemId) {
+  const savedRating = localStorage.getItem(`rating-${itemId}`);
+  if (savedRating) {
+    const stars = document.querySelectorAll(
+      `.stars[data-item="${itemId}"] .star`
+    );
+    stars.forEach((star, index) => {
+      if (index < savedRating) {
+        star.classList.add("lit");
+      }
+    });
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const allItems = document.querySelectorAll(".stars");
+  allItems.forEach((item) => {
+    const itemId = item.getAttribute("data-item");
+    loadRating(itemId);
+  });
+});
