@@ -6,7 +6,7 @@
 // dropdownn needs to work? events? targets?
 //jsfiddle.net super helpful!
 // make  it pretty? prettier doesn't work??
-
+// make the link to the home page work? onclick? for location
 function toggleDropdown() {
   const dropwdownMenu = document.getElementById("dropdownMenu");
   dropwdownMenu.classList.toggle("active");
@@ -64,3 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
     loadRating(itemId);
   });
 });
+
+/*
+const anime = ["death note", "future diary", "sailor moon", "ranma"];
+const randomIndex = Math.floor(Math.random() * anime.length);
+const randomElement = anime[randomIndex];
+console.log(randomElement);
+so random index? but how to display? html?
+*/
