@@ -11,31 +11,9 @@
     <title>Rotten Potatoes</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <img src="../main/bluegreensmoke.jpg" style="width:100%">
-      </div>
       
-      <div class="mySlides fade">
-        <img src="../main/deathnote.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides fade">
-        <img src="../main/futureDiaryBG.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides fade">
-        <img src="../main/house.jpg" style="width:100%">
-      </div>
-      
-      </div>
+      <img src="/main/pinkmoon.jpg" style="width:500px;height:300px;"></a>
       <br>
-           
-      
-      
     <h2>Log In</h2>
     <form method="post">
       <div class="user-info">
@@ -64,24 +42,6 @@
       <button type="submit">Log In</button>
     </div>
   </form>
-
-  <script>
-      
-    var slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; 
-        }
-        slideIndex++;
-        if (slideIndex> slides.length) {slideIndex = 1} 
-        slides[slideIndex-1].style.display = "block"; 
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
     
     <script src="Login.js"></script>
   </body>
