@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+        </style>
+  </head>
+
+  <body>
+    <img src="/main/pinkmoon.jpg" style="width:500px;height:300px;"></a>
+    <h2>Create Account</h2>
+        <form method="POST">
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name"/>
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name"/>
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"/>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"/>
+          </div>
+          <button id="btn" type="button" class="btn btn-default">Sign Up</button>
+        </form>
+
+        <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+          <div class="container">
+        
+            <div class="row">
+              <div class="alert alert-success hidden" id="success-alert">
+                <button type="button" class="close">x</button>
+                <span class="glyphicon glyphicon-ok"></span> We sent a link to your email to verify your account.
+              </div>
+            </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#btn").click(function() {
+                    $('#success-alert').removeClass('hidden');
+                });
+              $("button.close").click(function() {
+                    $('#success-alert').addClass('hidden');
+                });
+        
+            });
+        </script>
+
+
+  </body>
+</html>

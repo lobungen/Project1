@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/accountPage.css"
+    />
+    <title>Rotten Potatoes Account Page</title>
+  </head>
+
+  
+  <nav>
+    <div class="nav-container">
+      <a href="../main/main.html"class="mainBtn">«-(¯`v´¯)-« Back »-(¯`v´¯)-»</a>
+      </div>
+    </article>
+  </nav>
+
+
+  <body>
+
+    <h1>Account Page</h1>
+    <section>
+      <form>
+        <div class="user-info">
+          <ul>
+            <li>
+              <label for="username">Username:</label>
+              <label id="username"></label>
+            </li>
+            <li>
+              <label for="password">Password</label>
+              <label  id="password" ></label>
+            </li>
+          </ul>
+        </div>
+      </form>
+      <div>
+        <h2>Viewing Preferences:</h2>
+        <br />
+        <h3>Audio Preferences:</h3>
+        <ul>
+          <li>
+            <label class="language"></label>English
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </li>
+          <li>
+            <label class="language"></label>Spanish
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </li>
+          <li>
+            <label class="language"></label>Mandarin
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </li>
+          <li>
+            <label class="language"></label>Japanese
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Audio Preferences:</h3>
+        <ul>
+          <li>
+            <label class="language"></label>English
+            <input type="checkbox" checked="checked" id="english" />
+            <span class="checkmark"></span>
+          </li>
+          <li>
+            <label class="language"></label>Spanish
+            <input type="checkbox" id="spanish" />
+            <span class="checkmark"></span>
+          </li>
+          <li>
+            <label class="language"></label>Mandarin
+            <input type="checkbox" id="mandarin" />
+            <span class="checkmark"></span>
+          </li>
+          <li>
+            <label class="language"></label>Japanese
+            <input type="checkbox" id="japanese" />
+            <span class="checkmark"></span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Content Restrictions:</h3>
+        <label class="language"></label>Are you 18 and up?
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </div>
+      <div>
+        <h3>Content Restrictions:</h3>
+        <button class="deleteButton" onclick="clear()">☠️Delete My Account☠️</button>
+      </div>
+    </section>
+
+    <script src="./assets/js/accountPage.js"></script>
+  </body>
+</html>
