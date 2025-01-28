@@ -29,11 +29,11 @@
           <ul>
             <li>
               <label for="username">Username:</label>
-              <input type="text" name="username" id="username" required />
+              <label id="username"></label>
             </li>
             <li>
-              <label for="password">Change Password?</label>
-              <input type="password" name="password" id="password" />
+              <label for="password">Password</label>
+              <label  id="password" ></label>
             </li>
           </ul>
         </div>
@@ -98,9 +98,7 @@
       </div>
       <div>
         <h3>Content Restrictions:</h3>
-        <label class="delete"></label>☠️Delete My Account☠️
-        <input type="checkbox" id="" />
-        <span class="checkmark"></span>
+        <button class="deleteButton" onclick="clear()">☠️Delete My Account☠️</button>
       </div>
     </section>
 

@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
 
+
       window.location.href = "/main/main.html";
     });
   }
