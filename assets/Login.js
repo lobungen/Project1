@@ -73,7 +73,8 @@ function storeLocalStorage(data) {
     const existingData = readLocalStorage();
     existingData.push(data) {
         localStorage.setItem('post', JSON.stringify(existingData));
-    }};
+    };
+};
 
 document.getElementById('post').addEventListener('login',function (event){
     event.preventDefault();
