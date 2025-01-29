@@ -39,10 +39,6 @@ function storeLocalStorage(data) {
   localStorage.setItem("post", JSON.stringify(existingData));
 }
 
-document.getElementById("post").addEventListener("login", function (event) {
-  event.preventDefault();
-});
-
 const username = document.getElementById("username").value;
 const password = document.getElementById("password").value;
 
